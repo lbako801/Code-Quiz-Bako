@@ -1,3 +1,24 @@
+const start = document.getElementById('start-btn');
+const questionContainer = document.getElementById('question-container');
+
+start.addEventListener('click',beginQuiz)
+
+function beginQuiz() {
+  start.classList.add('hide')
+  questionContainer.classList.remove('hide')
+};
+
+function nextQuestion() {
+
+};
+
+function chosenAnswer() {
+  
+};
+
+
+
+
 
 
 const questions = [
@@ -33,4 +54,4 @@ const questions = [
       { text: 'Responsive', correct: true }
     ]
   }
-]
+];
