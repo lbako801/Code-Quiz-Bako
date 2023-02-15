@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    line-height: 1.5;
 }
 
 #app-intro {
@@ -71,7 +72,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 65vw;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
@@ -88,8 +89,8 @@ body {
 .answer-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 2rem;
-    padding: 1rem;
+    gap: 3rem;
+    padding: 2rem;
 }
 
 .answer-choice {
@@ -108,12 +109,13 @@ body {
     font-family: 'Roboto Mono', monospace;
    color: #c1c2c0;
     padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .answer-choice:hover {
     transition: all 400ms ease;
     cursor:pointer;
-    border:3px solid #49fc03;
+    border:3px solid rgb(221, 218, 8);
 }
 
 .hide {
