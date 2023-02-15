@@ -10,11 +10,11 @@ body {
     line-height: 1.5;
 }
 
-#app-intro {
+.app-intro {
     height: 25vh;
 }
 
-#app-intro>h1 {
+.app-intro>h1 {
     font-family:'Tourney';
     text-align: center;
     color: #c1c2c0;
@@ -22,7 +22,7 @@ body {
     padding: 1rem;
 }
 
-#app-intro>h2 {
+.app-intro>h2 {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     color: #49fc03;
@@ -118,6 +118,12 @@ body {
     border:3px solid rgb(221, 218, 8);
 }
 
+.answer-choice:focus{
+    background:rgb(221, 218, 8);
+    color: #131313;
+    border:3px solid rgb(221, 218, 8);
+}
+
 .hide {
     display: none;
 }
@@ -131,4 +137,10 @@ body {
 
 #time-num {
     color: #49fc03;
+}
+
+.scores {
+    font-family: 'Roboto Mono', monospace;
+    color: #c1c2c0;
+    font-size: 3rem;
 }
