@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
     <title>Code Trivia!</title>
 </head>
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-            </div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn">Next</button>
-        </div>
+
+    <div id="app-intro">
+        <h1>Code Trivia Quiz</h1>
+        <h2>Think you can get them all right?</h2>
     </div>
     
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <div id="main-container" class="hide">
+        <div id="question-container">
+            <div id="question">Question:</div>
+            <div id="answer-buttons" class="answer-grid">
+                <button class="answer-choice ">>> Question Answer</button>
+                <button class="answer-choice ">>> Question Answer</button>
+                <button class="answer-choice ">>> Question Answer</button>
+                <button class="answer-choice ">>> Question Answer</button>
+            </div>
+        </div>
+
+        <div class="next-btn">
+            <button id="next-btn">Next</button>
+        </div>
+        <div id="time">Time Left: <span id="time-num">60</span></div>
+    </div>
+
+    <div class="start">
+        <button id="start-btn" class="">Start</button>
+    </div>
+
+    <script src="./assets/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Tourney:wght@200&display=swap');
+
+body {
+    background-image: url(../images/dark-dot-bg.png);
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#app-intro {
+    height: 25vh;
+}
+
+#app-intro>h1 {
+    font-family:'Tourney';
+    text-align: center;
+    color: #c1c2c0;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+#app-intro>h2 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #49fc03;
+    animation: blink 1s linear infinite;
+    transition: all 400ms ease;
+    font-size: 1rem;
+}
+
+@keyframes blink{
+	50% {opacity: 0}
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#start-btn,#next-btn {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    border:3px solid #c1c2c0;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 1rem;
+    width: 10rem;
+    color: #c1c2c0;
+    transition: all 400ms ease;
+    justify-content: center;
+}
+
+#start-btn:hover,#next-btn:hover {
+    border:3px solid #49fc03;
+    transition: all 400ms ease;
+    background-color: #49fc03;
+    color: #131313;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+#main-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+#question-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'Roboto Mono', monospace;
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.answer-choice {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    border:3px solid #c1c2c0;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 1rem;
+    color: #c1c2c0;
+    transition: all 400ms ease;
+    justify-content: center;
+}
+
+#question {
+    font-family: 'Roboto Mono', monospace;
+   color: #c1c2c0;
+    padding: 1rem;
+}
+
+.answer-choice:hover {
+    transition: all 400ms ease;
+    cursor:pointer;
+    border:3px solid #49fc03;
+}
+
+.hide {
+    display: none;
+}
+
+#time {
+    font-family: 'Roboto Mono', monospace;
+    color: #c1c2c0;
+    text-align: center;
+    padding: 1rem;
+}
+
+#time-num {
+    color: #49fc03;
+}
